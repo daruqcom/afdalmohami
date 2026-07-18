@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://afdalmohami.com/sitemap.xml
