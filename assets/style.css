@@ -38,22 +38,14 @@ section{padding:70px 0;}
   color:var(--teal-dark); font-size:13px; text-align:center; padding:14px; border-radius:10px;
   min-height:180px;
 }
-.imgph-img{width:100%; height:100%; min-height:180px; object-fit:cover; border-radius:10px; display:block;}
-
-/* real image assets */
-.hero-icon{width:52px; height:52px; margin-bottom:14px; display:block;}
-.hero-banner{width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:var(--radius); margin-top:22px; display:block;}
-.page-image{width:100%; height:auto; border-radius:var(--radius); display:block;}
 
 /* header / nav */
 header.site{padding:18px 0; background:var(--bg); position:sticky; top:0; z-index:80; border-bottom:1px solid transparent;}
 header.site.scrolled{background:rgba(245,250,249,.92); backdrop-filter:blur(8px); border-bottom-color:var(--line);}
 header.site .wrap{display:flex; justify-content:space-between; align-items:center; gap:20px;}
-.brand{display:flex; align-items:center; gap:9px; text-decoration:none;}
-.brand-icon{height:38px; width:auto; display:block; flex-shrink:0;}
-.brand-text{font-family:'Lalezar','Fredoka',cursive; font-size:26px; color:var(--teal-dark); white-space:nowrap;}
-html[lang="en"] .brand-text{font-family:'Fredoka',sans-serif; font-weight:700;}
-.brand-text span{color:var(--sand-dark);}
+.brand{font-family:'Lalezar','Fredoka',cursive; font-size:26px; color:var(--teal-dark); white-space:nowrap;}
+html[lang="en"] .brand{font-family:'Fredoka',sans-serif; font-weight:700;}
+.brand span{color:var(--sand-dark);}
 nav.primary{display:flex; gap:6px; font-size:14.5px; font-weight:700; align-items:center;}
 nav.primary > a, nav.primary > .has-dd > button{
   padding:10px 14px; border-radius:8px; background:transparent; border:none; font:inherit; color:inherit; cursor:pointer;
@@ -238,24 +230,4 @@ footer.site li a:hover{color:#fff;}
   .city-grid-index{grid-template-columns:repeat(2,1fr);}
   .home-hero h1, .page-hero h1{font-size:28px;}
   .cta-band{margin:0 12px; padding:44px 20px;}
-}
-
-/* social icons */
-.social-icons{display:flex; gap:10px; margin-top:12px;}
-.social-icons a{color:rgba(255,255,255,.8); display:flex; width:32px; height:32px; align-items:center; justify-content:center; border-radius:50%; background:rgba(255,255,255,.08); transition:background .2s ease, color .2s ease;}
-.social-icons a:hover{background:var(--sand); color:var(--teal-darker);}
-.social-icons svg{width:16px; height:16px; display:block;}
-
-/* contextual in-content links (blog/service/hub/industry/city prose) */
-.content-block p a, .content-block li a, .answer-box a{
-  color:var(--teal-dark);
-  text-decoration:underline;
-  text-decoration-color:rgba(14,124,123,.35);
-  text-underline-offset:3px;
-  font-weight:600;
-  transition:color .15s ease, text-decoration-color .15s ease;
-}
-.content-block p a:hover, .content-block li a:hover, .answer-box a:hover{
-  color:var(--sand-dark);
-  text-decoration-color:currentColor;
 }
